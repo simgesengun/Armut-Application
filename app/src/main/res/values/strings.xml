@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Armut</string>
+    <string name="cleaning">Cleaning</string>
+    <string name="etc">Etc</string>
+    <string name="healthcare">Health</string>
+    <string name="private_tuition">Private Tuition</string>
+    <string name="renovation">Renovation</string>
+    <string name="repairing">Repairing</string>
+    <string name="transportation">Transportation</string>
+    <string name="wedding">Wedding</string>
+    <string name="unknown">Unknown</string>
+    <string name="title">Hizmet Piş\nağzıma düş</string>
+    <string name="all_services">All services</string>
+    <string name="popular_services">Popular these days</string>
+    <string name="latests_blog">Latest from the blog</string>
+    <string name="how_it_works">How it works</string>
+    <string name="service_continue">Continue</string>
+    <string name="step_1">Answer the questions</string>
+    <string name="step_2">Get Quotes</string>
+    <string name="step_3">Compare the prices and decide</string>
+    <string name="free_of_charge">Free of charge</string>
+    <string name="service_guaranteed">Service Guaranteed</string>
+    <string name="pro_count">%1$d pros near you</string>
+    <string name="average_rating">%1$.1f average rating</string>
+    <string name="completed_jobs">Last month %1$d cleaning jobs completed</string>
+    <string name="retry">Retry</string>
+</resources>

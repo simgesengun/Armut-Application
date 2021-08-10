@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.ArmutApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">#00000000</item>
+        <item name="android:statusBarColor" tools:targetApi="m"  tools:ignore="DuplicateDefinition">@color/off_white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowSoftInputMode">adjustNothing</item>
+        <item name="materialButtonStyle">@style/Widget.App.Button</item>
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:colorControlNormal">@color/green</item>
+        <item name="android:colorControlActivated">@color/green</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+    </style>
+
+
+    <!-- Button -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+        <item name="android:textAppearance">@style/TextAppearance.Button</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Button" parent="">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- TextAppearance -->
+
+    <style name="TextAppearance.Header" parent="TextAppearance.Title">
+        <item name="android:textSize">38sp</item>
+    </style>
+    <style name="TextAppearance.Caption" parent="TextAppearance.Title">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TextAppearance.Title" parent="TextAppearance.Body">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/work_sans_bold</item>
+    </style>
+    <style name="TextAppearance.Body.Thin" parent="TextAppearance.Body">
+        <item name="fontFamily">@font/open_sans</item>
+    </style>
+    <style name="TextAppearance.Button" parent="TextAppearance.Body">
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="TextAppearance.Blog" parent="TextAppearance.Body">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="TextAppearance.Body" parent="">
+        <item name="android:fontFamily">@font/open_sans_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_color</item>
+    </style>
+</resources>

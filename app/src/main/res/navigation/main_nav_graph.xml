@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homepageFragment">
+
+    <fragment
+        android:id="@+id/homepageFragment"
+        android:name="com.simgesengun.armutapplication.fragment.HomepageFragment"
+        android:label="fragment_homepage"
+        tools:layout="@layout/fragment_homepage" >
+        <action
+            android:id="@+id/toBlogPost"
+            app:destination="@id/blogPostFragment" />
+        <action
+            android:id="@+id/toServiceDetails"
+            app:destination="@id/serviceDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogPostFragment"
+        android:name="com.simgesengun.armutapplication.fragment.BlogPostFragment"
+        android:label="fragment_blog_post"
+        tools:layout="@layout/fragment_blog_post" >
+        <argument
+            android:name="service_url"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviceDetailsFragment"
+        android:name="com.simgesengun.armutapplication.fragment.ServiceDetailsFragment"
+        android:label="ServiceDetailsFragment"
+        tools:layout="@layout/fragment_service_details">
+        <argument
+            android:name="service"
+            app:argType="com.simgesengun.armutapplication.entity.ServiceDetail" />
+    </fragment>
+</navigation>
